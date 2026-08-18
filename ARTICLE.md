@@ -1,196 +1,210 @@
-# 🐾 Introducing OpenCatz AI: The Autonomous Multi-Agent Trading Swarm on Robinhood Chain (#4663)
+# 🐾 Inside Opencatz AI: The Autonomous Multi-Agent Trading Swarm on Robinhood Chain
 
-> *"Chill trades, 9 lives, razor-sharp on-chain instincts."*  
-> **Official Website:** [https://opencatz.xyz](https://opencatz.xyz)  
-> **Documentation:** [https://opencatz.xyz/docs](https://opencatz.xyz/docs)  
-> **Web Terminal Emulator:** [https://opencatz.xyz/terminal](https://opencatz.xyz/terminal)  
-> **GitHub Repository:** [https://github.com/dizcorvus/opencatz-ai-robinhood-chain](https://github.com/dizcorvus/opencatz-ai-robinhood-chain)
+> *"Chill trades, 9 lives, razor-sharp on-chain alpha."* — **Opencatz AI** 🐾⚡
+>
+> 🌐 **Official Website:** [https://opencatz.xyz](https://opencatz.xyz)  
+> 📖 **Documentation:** [https://opencatz.xyz/docs](https://opencatz.xyz/docs)  
+> 💻 **Web Terminal Emulator:** [https://opencatz.xyz/terminal](https://opencatz.xyz/terminal)  
+> 🔗 **GitHub Repository:** [https://github.com/dizcorvus/opencatz-ai-robinhood-chain](https://github.com/dizcorvus/opencatz-ai-robinhood-chain)  
+>
+> ⚠️ **Upfront Disclaimer (NFA & DYOR):** This article is strictly for educational, research, and technical exploratory purposes. Trading on-chain crypto assets, meme tokens, liquidity pools, and NFTs carries substantial financial risk. Always Do Your Own Research (DYOR) and employ strict capital risk management. *Not Financial Advice.*
 
 ---
+
+## 1. The On-Chain Reality: Why Manual Screening Falls Short
+
+Trading on a newly launched Layer-2 network is exhilarating, but anyone active on-chain understands the harsh reality: hundreds of new contracts deploy every hour, social feeds are saturated with promotional noise, and liquidity moves at sub-second velocity.
+
+While the upside in new ecosystems is immense, individual traders face steep obstacles:
+* **Overwhelming Scam Influx & Rugpulls:** Approximately 90% of newly deployed tokens end up as honeypots, developer liquidity removals (rugpulls), or illiquid pools dominated by automated sniper bots.
+* **Human Physical Fatigue:** Crypto markets operate 24/7. High-conviction alpha and critical liquidity migrations frequently occur at 3:00 AM while you are asleep.
+* **Severe Tool Fragmentation:** Vetting a single token requires juggling DexScreener (charts), GoPlus (contract security), GMGN (smart money flows), Twitter/X (sentiment), and Krystal (pool yields). It is exhausting and slow.
+* **Emotional Traps & FOMO:** Seeing sudden green candles tempts traders to buy at local tops, only to panic sell during standard market corrections.
+
+**Opencatz AI** was engineered to solve these exact structural problems. Rather than acting as a simple alert webhook, it is a comprehensive **Multi-Agent Swarm Intelligence** that autonomously monitors Robinhood Chain 24/7, filters noise through strict multi-agent consensus, and delivers actionable intelligence to Discord, an interactive terminal console, or Telegram.
+
+---
+
+## 2. Dedicated Single-Chain Focus: Robinhood Chain (EVM L2 #4663)
+
+Opencatz AI avoids fragile cross-chain bridges and complex routing layers by operating natively and exclusively on **Robinhood Chain**.
+
+| Network Parameter | Specification |
+| :--- | :--- |
+| **Network Name** | Robinhood Chain (EVM Layer 2) |
+| **Chain ID** | `4663` |
+| **Native Asset** | `ETH` |
+| **Canonical RPC** | `https://rpc.mainnet.chain.robinhood.com` |
+| **Block Explorer** | `https://robinhoodchain.blockscout.com` |
+| **Primary DEX Venue** | Uniswap V3 Router (Robinhood Chain L2) |
+| **Execution Profile** | Sub-second transaction finality with negligible gas fees |
+
+Focusing on a dedicated single-chain stack guarantees ultra-low latency, reliable swap execution, and zero bridge-related vulnerability vectors.
+
+---
+
+## 3. System Architecture: How the Swarm Operates
+
+Opencatz AI divides screening and trading responsibilities across 5 specialist screening agents, a central consensus gate, and post-execution risk managers:
 
 ```
-       /\_____/\
-      /  ■   ■  \       🐾 OPENCATZ AI (ROBINHOOD CHAIN) 🐾
-     ( ==  ^  == )      Autonomous Multi-Agent Crypto Intelligence
-      )    ~    (       & On-Chain Trading Ecosystem
-     (   _____   )      exclusively for Robinhood Chain EVM L2 (#4663)
-    ( (  )   (  ) )
-   (__(__)___(__)__)
+                          USER INTERFACE PLATFORMS
+              (Discord Command Center · Terminal TUI · Telegram Bridge)
+                                      │
+                                      ▼
+                   ┌───────────────────────────────────┐
+                   │       OPENCATZ CORE HUB           │
+                   │   #opencatz-control-room · chat   │
+                   │   risk gate · 9-lives risk engine │
+                   │   wallet service · trade journal  │
+                   └──────────────────┬────────────────┘
+                                      │ candidate signals
+     ┌────────────────┬───────────────┼───────────────┬────────────────┐
+     ▼                ▼               ▼               ▼                ▼
+ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+ │  MEME AGENT  │ │ LP VELOCITY  │ │  NFT AGENT   │ │ ALPHA SCRAPER│ │ ETH WHALES   │
+ │meme-robinhood│ │ lp-robinhood │ │    nft       │ │alpha-robinhood│ │ whale-eth    │
+ │ GMGN + GoPlus│ │ Krystal Cloud│ │   OpenSea    │ │X API v2 / Web│ │ Hyperliquid  │
+ │vol 24h ≥ $25k│ │Fee/TVL ≥ 2%  │ │floor +10%/1h │ │1h rh alpha   │ │perps ≥ $500k │
+ │liq ≥ $5k     │ │TVL ≥ $10k    │ │sales ≥ 3/h   │ │sentiment high│ │spot ≥ $50k   │
+ └──────┬───────┘ └──────┬───────┘ └──────┬───────┘ └──────┬───────┘ └──────┬───────┘
+        └────────────────┴───────────────┼────────────────┴────────────────┘
+                                         ▼
+                   ┌────────────────────────────────────┐
+                   │   SWARM CONSENSUS ENGINE (≥ 80%)   │
+                   │  Quant · Catalyst · Security Audit │
+                   └────────────────┬───────────────────┘
+                                    │ only ≥ 80% confidence
+                                    ▼
+          MULTI-PLATFORM DISPATCH (Discord · Terminal TUI · Telegram)
+                                    │
+                                    ▼
+                        WALLET TRACKER & POSITION MANAGER
 ```
 
----
+### Five Specialist Screening Sub-Agents
+1. 🌸 **Meme Robinhood Agent (`#call-meme-robinhood`):** Screens emerging tokens via GMGN OpenAPI & GoPlus Security. Strict default filters: 24h volume ≥ $25k, liquidity ≥ $5k, fee pool ≥ $250, and mandatory smart contract security verification.
+2. 🌊 **LP Velocity Agent (`#call-lp-robinhood`):** Scans concentrated liquidity pools on Uniswap V3 via Krystal Cloud API (`ethereum@4663`), filtering for TVL ≥ $10k, 24h volume ≥ $100k, and daily Fee/TVL ≥ 2% for passive yield farmers.
+3. 🔮 **NFT Sniper Agent (`#call-nft-robinhood`):** Monitors NFT collections such as Catz NFT on OpenSea REST API v2, detecting floor surges ≥ +10%/1h, volume spikes ≥ 1.5x, and sales velocity ≥ 3 transactions/hour.
+4. ☀️ **Alpha Scraper & Sentiment (`#call-alpha-robinhood`):** Harvests 1-hour narrative shifts on Robinhood Chain paired with real-time social sentiment analysis via official X (Twitter) API v2.
+5. 🐋 **ETH Whale Tracker (`#call-whale-eth`):** Tracks institutional capital movements on Hyperliquid L1, monitoring ETH perpetual positions ≥ $500k and spot order flow ≥ $50k.
 
-## 🌟 Executive Summary
+### 3-Layer Swarm Consensus Engine (≥ 80% Confidence Floor)
+No individual agent has authority to broadcast signals autonomously. Candidate tokens must undergo a 3-layer quantitative evaluation:
+* **Quant & Liquidity Layer (35%):** Depth, slippage, and volume-to-market-cap ratios.
+* **Catalyst & Sentiment Layer (35%):** Volume velocity, social sentiment, and smart money accumulation.
+* **Security Audit Layer (30%):** Automated anti-honeypot, mintability, blacklist, and ownership checks (*fail-closed* architecture).
 
-Decentralized finance and on-chain meme markets move at sub-second velocity. Between honeypots, rug pulls, fake liquidity, and noise, individual traders face an asymmetric disadvantage against automated MEV snipers and quantitative institutional desks.
+Signals scoring below **80%** are immediately discarded. Furthermore, a **Cross-Agent Conflict Veto** cancels BUY recommendations if whale agents detect opposing SHORT or distribution signals on the same underlying asset.
 
-**OpenCatz AI** changes the playing field. 
-
-Built exclusively for **Robinhood Chain (EVM L2 · Chain ID: 4663 · Native ETH)**, OpenCatz is an autonomous multi-agent intelligence and trading ecosystem. By orchestrating **5 specialist screening daemons** through a **3-Layer Swarm Consensus Engine** and protecting capital with a **9-Lives Automated Risk Engine**, OpenCatz turns raw blockchain noise into high-conviction, audited trading opportunities.
-
-Visit the live portal and interactive terminal at **[opencatz.xyz](https://opencatz.xyz)**.
-
----
-
-## 🧩 The OpenCatz Architecture: Feline Instincts Meet Algorithmic Rigor
-
-Unlike generic wrapper bots or naive LLM prompts that hallucinate trade ideas, OpenCatz operates on a strict **fail-closed, multi-agent consensus model**:
-
-```
-                       USER INTERFACE PLATFORMS
-           (Discord Command Center · Web Terminal · Telegram)
-                                   │
-                                   ▼
-                ┌─────────────────────────────────────┐
-                │        OPENCATZ CORE ENGINE         │
-                │     #opencatz-control-room · chat   │
-                │     9-Lives Risk Gate · Trade Memory│
-                └──────────────────┬──────────────────┘
-                                   │ candidate signals
-  ┌────────────────┬───────────────┼───────────────┬────────────────┐
-  ▼                ▼               ▼               ▼                ▼
-┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
-│  MEME AGENT  │ │ LP VELOCITY  │ │  NFT AGENT   │ │ ALPHA SCRAPER│ │ ETH WHALES   │
-│meme-robinhood│ │ lp-robinhood │ │    nft       │ │alpha-robinhood│ │ whale-eth    │
-│ GMGN + GoPlus│ │ Krystal Cloud│ │   OpenSea    │ │X API v2 / Web│ │ Hyperliquid  │
-│vol 24h ≥ $25k│ │Fee/TVL ≥ 2%  │ │floor +10%/1h │ │1h rh alpha   │ │perps ≥ $500k │
-└──────┬───────┘ └──────┬───────┘ └──────┬───────┘ └──────┬───────┘ └──────┬───────┘
-       └────────────────┼───────────────┼─────────────────┘
-                        ▼
-         ┌──────────────────────────────┐
-         │ 3-LAYER SWARM CONSENSUS GATE │
-         │   Layer 1: Quant & Liquidity │
-         │   Layer 2: Catalyst & Social │
-         │   Layer 3: Security & GoPlus │
-         │   Confidence Floor: >= 80%   │
-         └──────────────┬───────────────┘
-                        ▼
-         ┌──────────────────────────────┐
-         │     DISPATCH & EXECUTION     │
-         │   • Discord Embed Call Card  │
-         │   • Telegram Markdown Card   │
-         │   • 9-Lives Position Manager │
-         │     (-20% SL · 2x/3x TP)     │
-         └──────────────────────────────┘
-```
+### 9-Lives Risk Engine & Position Manager
+Post-execution, the Position Manager safeguards capital:
+* **Circuit Breaker:** Emergency shutdown mechanism halting active trading if daily drawdown thresholds are breached.
+* **Multi-Tier Take Profit (TP):** Automated profit milestones at +100% (2x) and +200% (3x).
+* **Disciplined Stop Loss (SL):** Firm capital preservation boundary at -20%.
+* **Dynamic Trailing Stop:** Protects accrued gains as price moves favorably.
+* **LP Out-of-Range Alerts:** Real-time warnings when spot price drifts outside active Uniswap V3 liquidity ticks.
 
 ---
 
-## 🐾 The 5 Specialist Screening Daemons
+## 4. Full Strategy Customization & Plain English Compiler
 
-OpenCatz does not rely on a single monolithic prompt. Instead, five dedicated autonomous daemons run 24/7 in the background:
-
-### 1. 🌸 Robinhood Meme Screener (`meme-robinhood`)
-- **Focus:** Microcap breakout and CTO (Community Takeover) runners on Robinhood Chain.
-- **Data Engine:** GMGN OpenAPI real-time smart money tracks, trench velocity, and GoPlus EVM security.
-- **Hard Gate:** $24\text{h Volume} \ge \$25\text{k}$, $\text{Liquidity} \ge \$5\text{k}$, 0% Honeypot / Blacklist risk.
-
-### 2. 🌊 Concentrated LP Velocity Agent (`lp-robinhood`)
-- **Focus:** High-yield Uniswap V3 concentrated liquidity fee farming pools.
-- **Data Engine:** Krystal Cloud DeFi Data API (`ethereum@4663`).
-- **Hard Gate:** $\text{TVL} \ge \$10\text{k}$, $24\text{h Volume} \ge \$100\text{k}$, $24\text{h Fee/TVL Ratio} \ge 2\%$.
-
-### 3. 🔮 NFT Sniper & Floor Surge Agent (`nft`)
-- **Focus:** Secondary floor sweeps and rarity mispricings on Robinhood Chain EVM NFTs.
-- **Data Engine:** OpenSea REST API v2 + Aggregator.
-- **Hard Gate:** $\text{Floor 1h Surge} \ge +10\%$, $\text{Volume Spike} \ge 1.5\times$, $\text{Sales} \ge 3/\text{hour}$.
-
-### 4. ☀️ 1-Hour Alpha & Social Scraper (`alpha-robinhood`)
-- **Focus:** Early narrative momentum and breaking Robinhood Chain ecosystem alpha.
-- **Data Engine:** Official Twitter / X API v2 social sentiment analysis + smart wallet tracking.
-- **Hard Gate:** Social sentiment score $\ge 75/100$, minimum 2 smart wallets accumulating within 30 minutes.
-
-### 5. 🐋 Hyperliquid ETH Whale Tracker (`whale-eth`)
-- **Focus:** Macro institutional positioning and derivative liquidity on Ethereum / L1.
-- **Data Engine:** Hyperliquid L1 orderbook feeds & whale alert RPCs.
-- **Hard Gate:** Perpetual open interest change $\ge \$500\text{k}$, spot fills $\ge \$50\text{k}$, min 1 institutional whale count.
+Opencatz AI adapts completely to your personal trading approach:
+* **Plain English Strategy Compiler:** Define custom screening criteria using natural language (e.g. *"Only hunt meme tokens held by 3+ smart wallets with liquidity over $15k"*). At startup, the compiler converts this prompt into a validated, sandboxed `.mjs` module.
+* **Screening Presets:**
+  * *Loosened Default:* Yields ~2x more signals for active traders while maintaining the strict 80% quality threshold.
+  * *Standard:* Highly conservative baseline filtering.
+  * *Numeric Editor:* Fine-tune numerical thresholds directly during onboarding or via Discord chat.
+* **Custom Indicators (`indicators/`):** Dedicated directory for adding custom technical indicators and quantitative formulas.
 
 ---
 
-## 🛡️ The 3-Layer Swarm Consensus & 9-Lives Risk Engine
+## 5. 💡 Pro-Tip: Run 100% Free with OpenRouter Free Tier
 
-### 1. 3-Layer Consensus Filter (Floor: $\ge 80\%$)
-Before any signal card is dispatched or executed, candidate tokens must pass three independent layers:
-1. **Layer 1 (Quant & Liquidity):** Evaluates depth, buy/sell ratios, volume consistency, and slippage tolerance.
-2. **Layer 2 (Catalyst & Sentiment):** Evaluates developer commitment, social velocity, and smart wallet accumulation.
-3. **Layer 3 (Security Audit):** 12-point automated GoPlus and GMGN contract security audit (checks for mintable functions, blacklists, transfer fees, honeypots, and proxy upgrades).
-
-### 2. 9-Lives Automated Risk Engine
-Capital preservation is sacred. OpenCatz equips every trade with:
-- **Hard Stop-Loss (-20%):** Automatically halts loss and triggers alerts upon breach.
-- **Take-Profit Milestone 1 (+100% / 2x):** Secures 50% of the position to completely recover the initial principal.
-- **Take-Profit Milestone 2 (+200% / 3x):** Secures pure profit while trailing the remainder.
-- **Dynamic Trailing Stops:** Locks in gains as winning tokens ascend.
-- **Instant Kill-Switch Circuit Breaker:** Instantly pauses all active screening and halts pending executions during market anomalies.
+You can operate Opencatz AI around the clock **with zero AI subscription costs ($0/month)**:
+1. Create a free account at [OpenRouter.ai](https://openrouter.ai) and generate an API key.
+2. Select high-performance free models such as `meta-llama/llama-3.3-70b-instruct:free` or `deepseek/deepseek-r1:free`.
+3. Opencatz AI performs all heavy filtering, math scoring, and security audits locally via deterministic code. The LLM is invoked only for high-level reasoning (sentiment analysis and control room chat queries). Operational overhead remains **strictly $0**!
 
 ---
 
-## 💬 Zero-Code Natural Language Strategy Compiler
+## 6. Execution Modes & Multi-Platform Command Center
 
-Want to customize your screening criteria? You don't need to write lines of complex code.
+### Execution Modes
+1. **`DRY_RUN` (Default):** Realistic market simulation using real-time Uniswap V3 quotes and gas calculations without capital risk.
+2. **`SIGNAL_ONLY`:** Operates purely as an intelligence radar, posting structured call cards with direct swap links for manual execution.
+3. **`AUTO_EXECUTE`:** Fully autonomous on-chain trading via Viem and Uniswap V3 when swarm consensus reaches ≥ 80% and risk checks pass.
 
-Simply talk to OpenCatz in natural language during onboarding or in `#opencatz-control-room`:
-
-> *"OpenCatz, only track community takeovers with at least 3 smart wallets, minimum $15k liquidity, and 0% buy tax."*
-
-OpenCatz's compiler automatically parses your intent, validates the constraints, and compiles a sandboxed JavaScript strategy module (`.mjs`) on the fly.
-
----
-
-## 💻 Multi-Platform Command Center
-
-1. **Discord Command Center:**
-   - `#opencatz-control-room`: Natural language chat, trade execution, portfolio review, and `/alert` price triggers.
-   - Dedicated screening signal channels: `#call-meme-robinhood`, `#call-lp-robinhood`, `#call-nft-robinhood`, `#call-alpha-robinhood`, `#call-whale-eth`.
-   - 22 Slash Commands with interactive button dashboards.
-
-2. **Terminal TUI (`opencatz terminal`):**
-   - Standalone 24-bit TrueColor ANSI console for power users running on servers or local workstations.
-
-3. **Web Portal & TUI Emulator ([opencatz.xyz](https://opencatz.xyz)):**
-   - Production web interface, live terminal console emulator, interactive documentation, and LLM Agent metadata (`/llms.txt`).
-
-4. **Telegram Notification Bridge:**
-   - Real-time Markdown alerts with one-click inline actions.
+### Multi-Platform Interfaces
+* **🎮 Discord Command Center:** Auto-provisions `🐾 OPENCATZ COMMAND CENTER` category, 6 specialized channels, and 22 slash commands.
+* **💻 Terminal TUI (`opencatz terminal`):** Interactive 24-bit TrueColor ANSI dashboard for VPS and headless server management.
+* **📱 Telegram Notification Bridge:** High-priority mobile push notifications with interactive callback buttons.
+* **🌐 Web Dashboard REST API (Port 3000):** Ready to connect with Next.js dashboards or mobile applications.
 
 ---
 
-## ⚡ Quickstart: Get Started in 60 Seconds
+## 7. 🎟️ Live Deployment in PX Identities Discord (404 Identities Holders)
 
-### Option 1: Explore the Web Portal
-Visit **[opencatz.xyz](https://opencatz.xyz)** or test commands directly on the web terminal at **[opencatz.xyz/terminal](https://opencatz.xyz/terminal)**.
+For traders seeking zero-infrastructure access: **Opencatz AI will be deployed live 24/7 in the PX Identities Discord server!**
 
-### Option 2: Clone & Launch Your Own Agent
+Holders of the **404 Identities (Robinhood Chain)** collection receive complimentary access:
+* Real-time screening signals across all dedicated channels.
+* On-demand smart contract audits directly inside Discord.
+* Live whale tracking and daily market summaries with zero server maintenance.
+
+---
+
+## 8. Step-by-Step Installation Guide
+
+### Prerequisites
+* **Node.js** version 22.12 or newer ([Download Node.js](https://nodejs.org))
+* **Git**
+* **Discord Bot Token** from Discord Developer Portal
+
+### Step 1: Clone the Repository
 ```bash
-# 1. Clone the open-source repository
 git clone https://github.com/dizcorvus/opencatz-ai-robinhood-chain.git
 cd "Opencatz AI (Robinhood Chain)"
-
-# 2. Install dependencies & build
-npm install
-npm run build
-
-# 3. Launch interactive onboarding wizard
-node bin/opencatz.js onboard
-
-# 4. Run development bot
-node bin/opencatz.js run
-
-# 5. Deploy 24/7 background PM2 daemon
-node bin/opencatz.js deploy
 ```
 
+### Step 2: Automated 1-Click Setup
+* **Windows (PowerShell):**
+  ```powershell
+  .\setup.bat
+  ```
+* **Linux / macOS / VPS:**
+  ```bash
+  bash setup.sh
+  ```
+
+### Step 3: Interactive Onboarding (`opencatz onboard`)
+Run the onboarding wizard:
+```bash
+opencatz onboard
+```
+Configure execution mode, Discord/Telegram credentials, AI provider, and data API keys (GMGN, Krystal Cloud, OpenSea, GoPlus, Uniswap, X API v2) alongside backup key arrays (`*_BACKUP_KEYS`).
+
+### Step 4: Launch the Swarm
+* **Development Mode:** `opencatz run`
+* **Terminal TUI Console:** `opencatz terminal`
+* **24/7 Production Background Daemon (PM2):** `opencatz deploy`
+
+> ✨ Upon bot initialization, Opencatz **automatically creates the `🐾 OPENCATZ COMMAND CENTER` category, configures all 6 channels, and registers all 22 slash commands**.
+
+### Essential Commands
+* `/analyze [address]`: Instant 3-layer security and liquidity audit for any contract.
+* `/wallet balance / setup`: Manage burner wallet and inspect on-chain balance.
+* `/alert set [token] [target]`: Set automated price alerts with Discord notifications.
+* `/journal summary / export`: Review trading performance and export trade logs to CSV.
+* `opencatz doctor`: Complete diagnostic check across RPC endpoints, API keys, and sub-agents.
+* `opencatz update`: Single-command auto-update (git pull, build, PM2 daemon restart).
+
 ---
 
-## 🌐 Official Resources & Links
+## 9. 🌟 Open Source & Roadmap
 
-- 🌐 **Official Website:** [https://opencatz.xyz](https://opencatz.xyz)
-- 📖 **Documentation:** [https://opencatz.xyz/docs](https://opencatz.xyz/docs)
-- 💻 **Web Terminal:** [https://opencatz.xyz/terminal](https://opencatz.xyz/terminal)
-- 🛡️ **Risk Engine Guide:** [https://opencatz.xyz/docs/risk-engine](https://opencatz.xyz/docs/risk-engine)
-- 🤖 **AI Agent Manifest:** [https://opencatz.xyz/llms.txt](https://opencatz.xyz/llms.txt)
-- 🐙 **GitHub Repo:** [https://github.com/dizcorvus/opencatz-ai-robinhood-chain](https://github.com/dizcorvus/opencatz-ai-robinhood-chain)
+Opencatz AI is **100% Open-Source** under the MIT license. We welcome developers, quants, and crypto researchers to collaborate, build new screening sub-agents, and contribute custom strategy modules.
 
----
+🔗 **GitHub Repository:** [https://github.com/dizcorvus/opencatz-ai-robinhood-chain](https://github.com/dizcorvus/opencatz-ai-robinhood-chain)
 
-*OpenCatz AI — Autonomous intelligence, 9 lives, and razor-sharp trading precision on Robinhood Chain EVM L2.* 🐾⚡
+The Robinhood Chain edition represents the foundation of the ecosystem. The team is actively developing **Opencatz AI Multi-Chain Edition** (Solana, Base, Arbitrum, BSC) and a **Premium Swarm Execution Engine**. Stay updated at [opencatz.xyz](https://opencatz.xyz)!
